@@ -37,7 +37,7 @@ export const getUserById = async (req, res) => {
 // Atualizar um usuário
 export const updateUser = async (req, res) => {
   const { id } = req.params;
-  
+
   // Verifica se o ID fornecido é válido
   if (!mongoose.Types.ObjectId.isValid(id)) {
     return res.status(404).json({ message: 'User not found' }); // Retorna 404 aqui
