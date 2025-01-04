@@ -4,8 +4,8 @@ import app from '../index';
 describe('User API', () => {
   it('should create a new user', async () => {
     const res = await request(app).post('/api/users').send({
-      name: 'Test User',
-      email: 'testuser@test.com',
+      name: 'Paloma15',
+      email: 'paloma15@test.com',
       password: '123456',
     });
     expect(res.statusCode).toBe(201);
