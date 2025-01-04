@@ -1,18 +1,19 @@
-# PUC-QAtests_backend
-
-# **User Management API**
+# PUC-QAtests_backend - User Management API
 
 Este projeto é uma API para gerenciar usuários, incluindo funcionalidades como criar, listar, atualizar e deletar usuários.
 O objetivo principal do projeto é treinar a prática com Jest.
 
 ## **Tabela de Conteúdos**
 
-- [Descrição](#descrição)
-- [Requisitos](#requisitos)
-- [Configuração](#configuração)
-- [Executando o Projeto](#executando-o-projeto)
-- [Testes](#testes)
-- [Estrutura de Pastas](#estrutura-de-pastas)
+- [PUC-QAtests_backend - User Management API](#puc-qatests_backend---user-management-api)
+  - [**Tabela de Conteúdos**](#tabela-de-conteúdos)
+  - [**Descrição**](#descrição)
+  - [**Requisitos**](#requisitos)
+  - [**Configuração**](#configuração)
+  - [**Executando o Projeto**](#executando-o-projeto)
+  - [**Testes**](#testes)
+  - [**Estrutura de Pastas**](#estrutura-de-pastas)
+  - [**Observações**](#observações)
 
 ---
 
