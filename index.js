@@ -2,6 +2,7 @@ import express from 'express';
 import connectDB from './config/db.js';
 import userRoutes from './routes/userRoutes.js';
 import dotenv from 'dotenv';
+import cors from 'cors';
 
 dotenv.config();
 
@@ -14,6 +15,7 @@ console.log('MONGO_URI:', process.env.MONGO_URI);
 connectDB();
 
 // Middlewares
+app.use(cors());
 app.use(express.json());
 app.use('/api/users', userRoutes);
 
@@ -24,4 +26,4 @@ if (process.env.NODE_ENV !== 'test') {
   });
 }
 
-export default app;  // Exporte o app para uso nos testes
+export default app; // Exporte o app para uso nos testes

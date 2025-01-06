@@ -73,3 +73,14 @@ export const deleteUser = async (req, res) => {
     res.status(500).json({ message: err.message });
   }
 };
+
+// Controlador para resetar o banco de dados
+export const resetDatabase = async (req, res) => {
+  try {
+    // Limpar todos os usuários
+    await User.deleteMany();
+    res.status(200).send('Database has been reset');
+  } catch (error) {
+    res.status(500).json({ message: 'Error resetting the database', error });
+  }
+};
